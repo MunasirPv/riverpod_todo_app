@@ -1,16 +1,31 @@
-# riverpod_todos
+# Todo App (Riverpod)
 
-A new Flutter project.
+A simple and efficient Todo application built using Flutter and **Riverpod** for state management. This project is created as a learning exercise to explore and understand Riverpod concepts, including providers, state management, and code generation.
+
+## Features
+
+- Add new tasks to your Todo list.
+- Mark tasks as completed or pending.
+- Delete tasks.
+- Filter tasks by their status (All, Completed, Pending).
+- Fully reactive state management using Riverpod.
+
+## Screenshots
+
+> *(Add screenshots of your app here if available)*
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+Ensure you have the following installed:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
+- Any IDE that supports Flutter (e.g., VSCode, Android Studio)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/riverpod-todo-app.git
