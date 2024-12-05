@@ -92,16 +92,21 @@ class _TodoScreenState extends ConsumerState<TodoScreen> {
           if (todos.isNotEmpty) const Divider(height: 0),
           for (final todo in todos) ...[
             const Divider(height: 0),
-            Material(
-              color: Colors.white,
-              child: ListTile(
-                leading: Checkbox(
-                  value: todo.completed,
-                  onChanged: (value) {
-                    ref.read(todoListProvider.notifier).toggle(todo.id);
-                  },
+            Dismissible(
+              key: ValueKey(todo.id),
+              onDismissed: (direction) =>
+                  ref.read(todoListProvider.notifier).remove(todo),
+              child: Material(
+                color: Colors.white,
+                child: ListTile(
+                  leading: Checkbox(
+                    value: todo.completed,
+                    onChanged: (value) {
+                      ref.read(todoListProvider.notifier).toggle(todo.id);
+                    },
+                  ),
+                  title: Text(todo.description),
                 ),
-                title: Text(todo.description),
               ),
             )
           ]

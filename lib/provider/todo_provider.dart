@@ -30,4 +30,8 @@ class TodoList extends _$TodoList {
           todo
     ];
   }
+
+  void remove(Todo target) {
+    state = state.where((todo) => todo.id != target.id).toList();
+  }
 }
